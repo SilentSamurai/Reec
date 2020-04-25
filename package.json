@@ -2,10 +2,10 @@
   "name": "reec",
   "version": "0.0.1",
   "description": "Mobile First Ui development package",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "development": "npx webpack --progress",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -14,16 +14,26 @@
   },
   "author": "Sourav Das",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@types/bootstrap": "^4.3.2",
+    "@types/jquery": "^3.3.35",
+    "bootstrap": "^4.4.1",
+    "popper.js": "^1.16.1"
+  },
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
-    "axios": "^0.16.2",
+    "@types/lodash": "^4.14.150",
     "bootstrap-sass": "^3.3.7",
-    "cross-env": "^5.0.1",
-    "jquery": "^3.1.1",
-    "laravel-mix": "^1.0",
+    "css-loader": "^3.5.3",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.4",
-    "vue": "^2.1.10"
+    "node-sass": "^4.11.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.0",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
