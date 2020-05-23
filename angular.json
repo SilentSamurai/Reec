@@ -126,6 +126,11 @@
     },
     "reec": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
       "root": "projects/reec",
       "sourceRoot": "projects/reec/src",
       "prefix": "rc",
