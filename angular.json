@@ -42,9 +42,15 @@
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
     "analytics": "1eaa3877-a569-4e3c-b269-0b20efef1758"
   },
-  "defaultProject": "reec"
+  "defaultProject": "reec",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

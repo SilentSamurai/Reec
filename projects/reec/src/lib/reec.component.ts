@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'lib-reec',
@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
       reec works!
     </p>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class ReecComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
