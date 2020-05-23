@@ -1,12 +1,12 @@
-import {NgModule} from '@angular/core';
-import {ReecComponent} from './reec.component';
-import {RcTileComponent} from './rc-tile/rc-tile.component';
+import { NgModule } from '@angular/core';
+import { ReecComponent } from './reec.component';
+
 
 
 @NgModule({
-  declarations: [ReecComponent, RcTileComponent],
-  imports: [],
+  declarations: [ReecComponent],
+  imports: [
+  ],
   exports: [ReecComponent]
 })
-export class ReecModule {
-}
+export class ReecModule { }
